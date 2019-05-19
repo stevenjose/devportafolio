@@ -8,7 +8,7 @@ import { Producto } from '../interfaces/info-producto.interfaces';
 export class ProductosService {
   productos: Producto[]=[];
   cargando = true;
-  constructor(private http: HttpClient) {
+ constructor(private http: HttpClient) {
       this.cargarProductos();
    }
 
