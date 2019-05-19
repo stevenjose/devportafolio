@@ -6,10 +6,10 @@ import { ItemComponent } from './pages/item/item.component';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
-  {path:'home', component: PortafolioComponent},
-  {path:'about', component: AboutComponent},
-  {path:'item', component: ItemComponent},
-  {path:'**', pathMatch: 'full', redirectTo: 'home'},
+  { path: 'home', component: PortafolioComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'item/:id', component: ItemComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];
 
 @NgModule({
