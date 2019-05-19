@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
-
+import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   {path:'home', component: PortafolioComponent},
   {path:'about', component: AboutComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, {useHash:true })
+    RouterModule.forRoot(routes, {useHash:true }),
+    HttpClientModule
   ],
   exports: [RouterModule]
 })
