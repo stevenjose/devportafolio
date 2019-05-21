@@ -7,7 +7,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 })
 export class FooterComponent implements OnInit {
   anio: number = new Date().getFullYear();
-  autor: String = "JOSE G LOPEZ A";
+  //autor: String = "JOSE G LOPEZ A";
   constructor(public _servicio: InfoPaginaService) { }
 
   ngOnInit() {
