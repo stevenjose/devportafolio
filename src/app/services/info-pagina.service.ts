@@ -24,7 +24,7 @@ export class InfoPaginaService {
   private cargarInfo(){
     //console.log("Servicio InfoPaginaService activo");
     // Leer archivo ./assets/data/data-pagina.json JSON
-    this.http.get('/assets/data/data-pagina.json')
+    this.http.get('https://portafolio-d8e89.firebaseio.com/data-principal.json')
     .subscribe((resp:InfoPagina) =>{
       this.cargada = true;
       this.info = resp;
