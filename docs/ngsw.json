@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
   "timestamp": 1559449901680,
-  "index": "./",
+  "index": "https://stevenjose.github.io/devportafolio/",
   "assetGroups": [
     {
       "name": "app",
@@ -437,7 +437,7 @@
     "/assets/productos/project-9.jpg": "cedbae971cbc603e3a1fc71c7c832e532f00dd1a",
     "/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "32a013fa9b7307602f3ca4d019078de13dc8527d",
+    "https://stevenjose.github.io/devportafolio/": "32a013fa9b7307602f3ca4d019078de13dc8527d",
     "/main.5dd6afd157a1332e74ad.js": "597b506e49a18e0c95272d12ebee82a2df75d31e",
     "/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
