@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
   "timestamp": 1559449901680,
-  "index": "/",
+  "index": "https://stevenjose.github.io/devportafolio/",
   "assetGroups": [
     {
       "name": "app",
@@ -10,7 +10,7 @@
       "urls": [
         "/es2015-polyfills.1e04665e16f944715fd2.js",
         "/favicon.ico",
-        "/index.html",
+        "https://stevenjose.github.io/devportafolio/",
         "/main.5dd6afd157a1332e74ad.js",
         "/polyfills.8bbb231b43165d65d357.js",
         "/runtime.26209474bfa8dc87a77c.js",
