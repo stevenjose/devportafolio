@@ -1,19 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { InfoPagina } from '../interfaces/info-pagina.interface';
+
 import { InfoPagAbout } from '../interfaces/info-pag-about.interface';
+import { InfoPrincipal } from '../interfaces/infor-pag-principal';
+import { InfoPagina } from '../interfaces/info-pagina.interface';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class InfoPaginaService {
-  info: InfoPagina ={};
+  info: InfoPagina ={ };
   cargada = false;
   equipo?: InfoPagAbout[];
+  infoPagPrinc: InfoPrincipal[] = [];
 
   constructor(private http: HttpClient) {
     this.cargarInfo();
     this.cargarEquipo();
+    this.cargarInfoPrincipal();
   }
 
   private cargarInfo(){
@@ -23,7 +28,7 @@ export class InfoPaginaService {
     .subscribe((resp:InfoPagina) =>{
       this.cargada = true;
       this.info = resp;
-      //console.log(resp);
+      console.log(resp);
       //console.log(resp['twitter']);
     });
   }
@@ -35,6 +40,15 @@ export class InfoPaginaService {
     .subscribe((resp: InfoPagAbout[]) =>{
       this.cargada = true;
       this.equipo = resp;
+    });
+  }
+
+  private cargarInfoPrincipal(){
+
+    this.http.get('https://portafolio-d8e89.firebaseio.com/data-principal.json')
+    .subscribe((resp: InfoPrincipal[]) =>{
+      this.cargada = true;
+      this.infoPagPrinc = resp;
     });
   }
 }
