@@ -4,7 +4,7 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/",
+  "scope": "https://stevenjose.github.io/devportafolio/",
   "start_url": "https://stevenjose.github.io/devportafolio/",
   "icons": [
     {
